@@ -1,5 +1,9 @@
 import pyautogui as pyg
 from time import sleep
+import os
+
+path_parent = os.getcwd()
+assets_path = path_parent + "/assets"
 
 
 def refactor(excel_dt):
@@ -22,9 +26,9 @@ def refactor(excel_dt):
 
 def sendMsg(msg, contact):
 
-    search_box = pyg.locateCenterOnScreen("light.png")
+    search_box = pyg.locateCenterOnScreen(f"{assets_path}/light.png")
     if search_box == None:
-        search_box = pyg.locateCenterOnScreen("dark.png")
+        search_box = pyg.locateCenterOnScreen(f"{assets_path}/dark.png")
 
     if search_box == None:
         print("Something is not right. Could not find the search bar")
