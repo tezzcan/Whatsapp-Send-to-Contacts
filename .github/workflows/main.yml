@@ -13,4 +13,4 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Tests
-        run: python3 -m pytest
+        run: DISPLAY=:0 python3 -m pytest
