@@ -1,4 +1,5 @@
-from wsa.functions import refactor, add
+from enum import Flag
+from wsa.functions import refactor, validate
 import pytest
 import pandas as pd
 import os
@@ -11,3 +12,8 @@ def test_refactor():
     input_df = refactor(t_file)
 
     assert isinstance(input_df, list) == True
+
+
+@pytest.mark.parametrize("sample, is_ok", [("hello", True), (123, False)])
+def test_validate(sample, is_ok):
+    assert validate(sample) == is_ok

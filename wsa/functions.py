@@ -6,8 +6,8 @@ path_parent = os.getcwd()
 assets_path = path_parent + "/assets"
 
 
-def add(x, y):
-    return x + y
+def validate(msg):
+    return isinstance(msg, str)
 
 
 def refactor(excel_dt):
@@ -29,6 +29,10 @@ def refactor(excel_dt):
 
 
 def sendMsg(msg, contact):
+
+    if not validate(msg):
+        print("The message that you provided needs to a string")
+        return
 
     search_box = pyg.locateCenterOnScreen(f"{assets_path}/light.png")
     if search_box == None:
