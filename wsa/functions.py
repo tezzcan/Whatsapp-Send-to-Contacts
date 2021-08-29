@@ -6,6 +6,10 @@ path_parent = os.getcwd()
 assets_path = path_parent + "/assets"
 
 
+def add(x, y):
+    return x + y
+
+
 def refactor(excel_dt):
 
     to_modify = [

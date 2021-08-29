@@ -1,0 +1,8 @@
+setup.py
+wsa/__init__.py
+wsa/functions.py
+wsa.egg-info/PKG-INFO
+wsa.egg-info/SOURCES.txt
+wsa.egg-info/dependency_links.txt
+wsa.egg-info/requires.txt
+wsa.egg-info/top_level.txt
