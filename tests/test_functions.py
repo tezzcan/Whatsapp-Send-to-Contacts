@@ -4,6 +4,7 @@ import pytest
 import pandas as pd
 import os
 
+# CANER TASLAMANI ÇOK SEVERİM
 test_path = os.getcwd() + "/tests"
 
 
