@@ -7,5 +7,5 @@ setup(
     author="Oğuzhan Tezcan",
     author_email="oguzhantezcann@gmail.com",
     packages=["wsa"],
-    install_requires=["pytest", "pandas", "pyautogui"],
+    install_requires=["numpy", "pytest", "pandas", "pyautogui"],
 )
