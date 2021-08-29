@@ -1,4 +1,5 @@
 import pandas as pd
+import pyautogui as pyg
 from time import sleep
 from wsa import functions
 
