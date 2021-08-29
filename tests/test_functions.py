@@ -1,10 +1,14 @@
 from enum import Flag
-from wsa.functions import refactor, validate
 import pytest
 import pandas as pd
 import os
 
 test_path = os.getcwd() + "/tests"
+
+try:
+    from wsa.functions import refactor, validate
+except KeyError:
+    pass
 
 
 def test_refactor():

@@ -13,6 +13,4 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Tests
-        run: |
-          xhost +SI:localuser:root  
-          python3 -m pytest
+        run: python3 -m pytest
